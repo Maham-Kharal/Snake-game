@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Mode Toggle -->
+        <div class="mode-toggle">
+            <label><input type="radio" name="mode" value="offline" checked> Offline</label>
+            <label><input type="radio" name="mode" value="online"> Online</label>
+        </div>
+
+        <!-- Game Board -->
+        <div id="game-board" class="grid"></div>
+
+        <!-- Control Panel -->
+        <div class="controls">
+            <p>Score: <span id="score">0</span></p>
+            <button id="restart">Restart</button>
+        </div>
+
+        <!-- Online Players List (Hidden in Offline Mode) -->
+        <div id="online-players" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
